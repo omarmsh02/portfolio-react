@@ -1,0 +1,45 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mypic {
+  width: 50%;
+  height: 300px;
+  border: 5px solid black;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid gray;
+  margin: 20px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-info div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info label {
+  font-weight: bold;
+}
+
+.contact-info span {
+  color: var(--Secondary-color);
+}
+
+.contact-info a {
+  color: var(--fourth-color);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}

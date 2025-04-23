@@ -1,0 +1,58 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+.project-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%; /* Ensure all cards have the same width */
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Prevent images from overflowing */
+  text-align: center;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%; /* Ensure images fill the card horizontally */
+  height: 150px; /* Fixed height for consistency */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  border-radius: 8px;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--Secondary-color);
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}

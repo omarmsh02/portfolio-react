@@ -1,0 +1,23 @@
+.Main {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #button1 {
+    height: 40px;
+    padding: 3%;
+    background-color: var(--fourth-color);
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  
+  section > img {
+    width: 60%;
+  }
+  
+  #button1:hover {
+    background-color: var(--fifth-color);
+  }
